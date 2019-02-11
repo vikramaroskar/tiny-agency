@@ -1,5 +1,4 @@
 import React from "react";
-import { withPrefix } from "gatsby";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -34,22 +33,19 @@ const styles = theme => ({
           const {
             node: {
               html,
-              frontmatter: { title, siteLink, imageLink, image },
+              frontmatter: { title, siteLink, imageLink },
             },
           } = edge;
           return (
             <Grid item xs={12} md={4} key={title} style={{ height: "100%" }}>
               <Card>
-                {image ? (
-                  <CardMedia
-                    image={withPrefix(image)}
-                    className={classes.card}
-                  />
-                ) : (
+                {siteLink ? (
                   undefined
+                ) : (
+                  <CardMedia image={imageLink} className={classes.card} />
                 )}
                 <CardContent>
-                  {imageLink ? (
+                  {siteLink ? (
                     <center>
                       <Link siteLink={siteLink}>
                         <img

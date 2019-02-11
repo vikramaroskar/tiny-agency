@@ -1,6 +1,6 @@
 ---
 title: "Engineering"
-image: "products/galina-n-200668-unsplash.jpg"
+imageLink: "https://s3.amazonaws.com/foxandgeese/engineering.png"
 ---
 
 - Robust, scalable, and self-healing architecture

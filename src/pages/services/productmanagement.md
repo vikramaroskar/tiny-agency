@@ -1,6 +1,6 @@
 ---
 title: "Product Management"
-image: "products/productmanagement.png"
+imageLink: "https://s3.amazonaws.com/foxandgeese/what_is_a_product_manager-570x320.png"
 ---
 
 We excel at complex product development.
