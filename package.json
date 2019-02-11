@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-material-ui-business-starter",
+  "version": "1.0.0",
+  "author": "Peter Bray <peter@foxandgeese.com>",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "gatsby": "^2.0.118",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-remark": "^2.2.4",
+    "gh-pages": "^2.0.1",
+    "jss": "^9.8.7",
+    "mdi-material-ui": "^5.9.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-helmet": "^5.2.0",
+    "react-jss": "^8.6.1",
+    "react-swipeable-views": "^0.13.1",
+    "react-swipeable-views-utils": "^0.13.1"
+  }
+}
