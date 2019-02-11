@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-material-ui-business-starter",
+  "name": "simple-react-company-starter",
   "version": "1.0.0",
   "author": "Peter Bray <peter@foxandgeese.com>",
+  "description": "Single page, single page app. Dead simple Gatsby.js + React.js starter (that we use for our live site).",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

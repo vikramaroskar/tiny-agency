@@ -55,7 +55,7 @@ const styles = theme => ({
             variant="h3"
             component="span"
           >
-            Hi
+            hi
           </Typography>
           <Typography paragraph gutterBottom variant="body1" component="span">
             {preamble}
