@@ -1,6 +1,22 @@
 import React from "react";
-import { Redirect } from "@reach/router";
+import Typography from "@material-ui/core/Typography";
 
-const NotFoundPage = () => <Redirect to="/" />;
+class NotFoundPage extends React.Component {
+  render() {
+    return (
+      <Page title="Not Found">
+        <Typography
+          paragraph
+          color="primary"
+          gutterBottom
+          variant="h3"
+          component="span"
+        >
+          Hey! You just hit a page that doesn't exist.
+        </Typography>
+      </Page>
+    );
+  }
+}
 
 export default NotFoundPage;
