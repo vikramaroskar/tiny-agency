@@ -12,15 +12,20 @@ import { Robot } from "mdi-material-ui";
 import logo from "../../images/logo.png";
 
 const styles = theme => ({
+    angles: {
+      color: theme.palette.primary.light,
+    },
     logo: {
       marginBottom: "40px",
       width: "100px",
+      border: "0",
     },
     text: {
       textAlign: "center",
     },
     tabs: {
       marginTop: "40px",
+      marginBottom: "40px",
     },
   }),
   Home = props => {
@@ -35,7 +40,9 @@ const styles = theme => ({
             company,
             defaultTitle,
             preamble,
+            postamble,
             defaultDescription,
+            contact: { email },
           },
         },
       },
@@ -47,7 +54,9 @@ const styles = theme => ({
           <link rel="canonical" href={domain} />
         </SEO>
         <div className={classes.text}>
-          <img src={logo} alt={company} className={classes.logo} />
+          <a href={domain}>
+            <img src={logo} alt={company} className={classes.logo} />
+          </a>
           <Typography
             paragraph
             color="secondary"
@@ -55,7 +64,8 @@ const styles = theme => ({
             variant="h3"
             component="span"
           >
-            hi
+            <span className={classes.angles}>&lt;</span> hi{" "}
+            <span className={classes.angles}>&gt;</span>
           </Typography>
           <Typography paragraph gutterBottom variant="body1" component="span">
             {preamble}
@@ -72,6 +82,21 @@ const styles = theme => ({
             ]}
           />
         </div>
+        <div className={classes.text}>
+          <Typography paragraph gutterBottom variant="body1" component="span">
+            {postamble}
+          </Typography>
+          <Typography
+            paragraph
+            color="secondary"
+            gutterBottom
+            variant="h3"
+            component="span"
+          >
+            <span className={classes.angles}>&lt;</span> {email}{" "}
+            <span className={classes.angles}>&gt;</span>
+          </Typography>
+        </div>
       </Page>
     );
   };
@@ -85,6 +110,10 @@ export const query = graphql`
         defaultTitle
         preamble
         defaultDescription
+        postamble
+        contact {
+          email
+        }
       }
     }
     Products: allMarkdownRemark(
@@ -119,4 +148,4 @@ export const query = graphql`
   }
 `;
 
-export default withRoot(withStyles(styles)(Home));
+export default withRoot(withStyles(styles, { withTheme: true })(Home));

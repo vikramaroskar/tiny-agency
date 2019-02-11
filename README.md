@@ -1,5 +1,7 @@
 # Simple React Company Starter
 
+**[Check out the demo.](https://foxandgeese.github.io/simple-react-company-starter/)**
+
 Updated README coming soon!
 
 ## Deployment

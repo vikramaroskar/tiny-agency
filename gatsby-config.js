@@ -8,6 +8,7 @@ module.exports = {
       "We're a Portland, Oregon-based team of data scientists and software engineers.",
     defaultDescription:
       "We create products and provide services that surface business insights from website changes.",
+    postamble: "Think we can help your project? We'd love to hear from you...",
     contact: {
       email: "hi@foxandgeese.com",
     },
