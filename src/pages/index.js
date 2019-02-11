@@ -13,7 +13,7 @@ import logo from "../../images/logo.png";
 
 const styles = theme => ({
     angles: {
-      color: theme.palette.primary.light,
+      color: theme.palette.secondary.light,
     },
     logo: {
       marginBottom: "40px",
@@ -59,7 +59,7 @@ const styles = theme => ({
           </a>
           <Typography
             paragraph
-            color="secondary"
+            color="primary"
             gutterBottom
             variant="h3"
             component="span"
@@ -88,7 +88,7 @@ const styles = theme => ({
           </Typography>
           <Typography
             paragraph
-            color="secondary"
+            color="primary"
             gutterBottom
             variant="h3"
             component="span"
