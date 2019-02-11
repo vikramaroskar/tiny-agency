@@ -17,6 +17,8 @@ const styles = theme => ({
     imageLink: {
       border: 0,
       width: "80%",
+      paddingTop: "40px",
+      paddingBottom: "20px",
     },
   }),
   Link = props =>
@@ -33,7 +35,13 @@ const styles = theme => ({
           const {
             node: {
               html,
-              frontmatter: { title, siteLink, imageLink },
+              frontmatter: {
+                title,
+                siteLink,
+                imageLink,
+                customWidth,
+                customTopPadding,
+              },
             },
           } = edge;
           return (
@@ -52,6 +60,10 @@ const styles = theme => ({
                           src={imageLink}
                           alt={title}
                           className={classes.imageLink}
+                          style={{
+                            paddingTop: customTopPadding,
+                            width: customWidth,
+                          }}
                         />
                       </Link>
                     </center>

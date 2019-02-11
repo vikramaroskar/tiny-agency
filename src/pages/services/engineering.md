@@ -3,7 +3,7 @@ title: "Engineering"
 imageLink: "https://s3.amazonaws.com/foxandgeese/engineering.png"
 ---
 
-- Robust, scalable, and self-healing architecture
+- Robust, scalable, and self-healing
 - Python, Node.js, React.js, and more
 - Infrastructure as Code
 - NoOps / DevOps

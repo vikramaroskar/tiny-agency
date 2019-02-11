@@ -97,6 +97,8 @@ export const query = graphql`
             title
             siteLink
             imageLink
+            customWidth
+            customTopPadding
           }
         }
       }
