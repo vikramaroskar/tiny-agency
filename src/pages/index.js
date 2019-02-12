@@ -17,6 +17,7 @@ const styles = theme => ({
     logo: {
       marginBottom: "40px",
       width: "100px",
+      height: "100px",
       border: "0",
     },
     text: {

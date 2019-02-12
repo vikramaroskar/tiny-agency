@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
-import withRoot from "../utils/withRoot";
 import { withStyles } from "@material-ui/core/styles";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -28,4 +27,4 @@ class Page extends React.Component {
   }
 }
 
-export default withRoot(withStyles(styles)(Page));
+export default withStyles(styles)(Page);

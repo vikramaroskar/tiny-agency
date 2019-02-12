@@ -5,6 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
+import withRoot from "../utils/withRoot";
 
 const styles = theme => ({
     grid: {
@@ -101,4 +102,4 @@ const styles = theme => ({
     );
   };
 
-export default withStyles(styles)(List);
+export default withRoot(withStyles(styles)(List));

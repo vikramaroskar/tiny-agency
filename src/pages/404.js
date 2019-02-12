@@ -1,6 +1,7 @@
 import React from "react";
 import Page from "../components/Page";
 import Typography from "@material-ui/core/Typography";
+import withRoot from "../utils/withRoot";
 
 class NotFoundPage extends React.Component {
   render() {
@@ -20,4 +21,4 @@ class NotFoundPage extends React.Component {
   }
 }
 
-export default NotFoundPage;
+export default withRoot(NotFoundPage);
