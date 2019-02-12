@@ -8,8 +8,14 @@ import { withStyles } from "@material-ui/core/styles";
 import withRoot from "../utils/withRoot";
 
 const styles = theme => ({
+    grid: {
+      height: "100%",
+    },
     card: {
-      height: "200px",
+      height: "100%",
+    },
+    cardMedia: {
+      height: "150px",
     },
     titleText: {
       textAlign: "center",
@@ -30,7 +36,13 @@ const styles = theme => ({
   List = props => {
     const { classes } = props;
     return (
-      <Grid spacing={24} container justify="center" alignItems="stretch">
+      <Grid
+        spacing={24}
+        container
+        justify="center"
+        alignItems="stretch"
+        className={classes.grid}
+      >
         {props.items.map(edge => {
           const {
             node: {
@@ -45,12 +57,12 @@ const styles = theme => ({
             },
           } = edge;
           return (
-            <Grid item xs={12} md={4} key={title} style={{ height: "100%" }}>
-              <Card>
+            <Grid item xs={12} md={4} key={title}>
+              <Card className={classes.card}>
                 {siteLink ? (
                   undefined
                 ) : (
-                  <CardMedia image={imageLink} className={classes.card} />
+                  <CardMedia image={imageLink} className={classes.cardMedia} />
                 )}
                 <CardContent>
                   {siteLink ? (
