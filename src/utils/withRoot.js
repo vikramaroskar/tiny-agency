@@ -23,7 +23,7 @@ function withRoot(Component) {
 
     render() {
       return (
-        <Hidden>
+        <Hidden implementation="css">
           <JssProvider
             generateClassName={this.muiPageContext.generateClassName}
           >
