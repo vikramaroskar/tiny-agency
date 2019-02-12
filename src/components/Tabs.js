@@ -25,9 +25,7 @@ TabContainer.propTypes = {
 };
 
 const styles = theme => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-  },
+  root: {},
 });
 
 class MyTabs extends React.Component {

@@ -10,13 +10,19 @@ import { Alien } from "mdi-material-ui";
 import { Robot } from "mdi-material-ui";
 import logo from "../../images/logo.png";
 import withRoot from "../utils/withRoot";
+import Avatar from "@material-ui/core/Avatar";
 
 const styles = theme => ({
     angles: {
       color: theme.palette.secondary.light,
     },
-    logo: {
+    avatar: {
+      width: "160px",
+      height: "160px",
       marginBottom: "40px",
+      backgroundColor: theme.palette.primary.light,
+    },
+    logo: {
       width: "100px",
       height: "100px",
       border: "0",
@@ -55,14 +61,18 @@ const styles = theme => ({
           <link rel="canonical" href={domain} />
         </SEO>
         <div className={classes.text}>
-          <a href={domain}>
-            <img src={logo} alt={company} className={classes.logo} />
-          </a>
+          <center>
+            <Avatar className={classes.avatar}>
+              <a href={domain}>
+                <img src={logo} alt={company} className={classes.logo} />
+              </a>
+            </Avatar>
+          </center>
           <Typography
             paragraph
             color="primary"
             gutterBottom
-            variant="h3"
+            variant="h1"
             component="span"
           >
             <span className={classes.angles}>&lt;</span> hi{" "}
@@ -91,7 +101,7 @@ const styles = theme => ({
             paragraph
             color="primary"
             gutterBottom
-            variant="h3"
+            variant="h5"
             component="span"
           >
             <span className={classes.angles}>&lt;</span> {email}{" "}
