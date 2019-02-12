@@ -1,8 +1,8 @@
 ---
 title: "Versionista"
 siteLink: "https://versionista.com"
-imageLink: "https://versionista.com/versionista-logo-big.png"
-customWidth: "55%"
+imageLink: "https://s3.amazonaws.com/foxandgeese/versionista-logo-lato.svg"
+customWidth: "75%"
 customTopPadding: "52px"
 ---
 
