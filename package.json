@@ -1,8 +1,8 @@
 {
-  "name": "simple-react-company-starter",
+  "name": "tiny-agency",
   "version": "1.0.0",
   "author": "Peter Bray <peter@foxandgeese.com>",
-  "description": "Single page, single page app. Dead simple Gatsby.js + React.js starter (that we use for our live site).",
+  "description": "Simple Gatsby.js starter that uses material design. Perfect for tiny agencies.",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

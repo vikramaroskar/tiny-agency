@@ -14,7 +14,7 @@ module.exports = {
     },
     menuLinks: [],
   },
-  pathPrefix: "/simple-react-company-starter",
+  pathPrefix: "/tiny-agency",
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",

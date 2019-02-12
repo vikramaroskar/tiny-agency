@@ -28,7 +28,7 @@ const Footer = props => {
             {email}
           </Typography>
           <a
-            href="https://github.com/foxandgeese/simple-react-company-starter"
+            href="https://github.com/foxandgeese/tiny-agency"
             target="_blank"
             rel="noopener noreferrer"
           >
