@@ -6,5 +6,5 @@ customWidth: "70%"
 customTopPadding: "50px"
 ---
 
-Designed for IT staff, Fluxguard enabled sophisticated session orchestration to
+Designed for IT staff, Fluxguard enables sophisticated session orchestration to
 monitor, alert, and archive website changes.
