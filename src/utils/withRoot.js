@@ -4,6 +4,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "./getPageContext";
+import Hidden from "@material-ui/core/Hidden";
 
 function withRoot(Component) {
   class WithRoot extends React.Component {
@@ -22,18 +23,22 @@ function withRoot(Component) {
 
     render() {
       return (
-        <JssProvider generateClassName={this.muiPageContext.generateClassName}>
-          {/* MuiThemeProvider makes the theme available down the React
-              tree thanks to React context. */}
-          <MuiThemeProvider
-            theme={this.muiPageContext.theme}
-            sheetsManager={this.muiPageContext.sheetsManager}
+        <Hidden>
+          <JssProvider
+            generateClassName={this.muiPageContext.generateClassName}
           >
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            <Component {...this.props} />
-          </MuiThemeProvider>
-        </JssProvider>
+            {/* MuiThemeProvider makes the theme available down the React
+              tree thanks to React context. */}
+            <MuiThemeProvider
+              theme={this.muiPageContext.theme}
+              sheetsManager={this.muiPageContext.sheetsManager}
+            >
+              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+              <CssBaseline />
+              <Component {...this.props} />
+            </MuiThemeProvider>
+          </JssProvider>
+        </Hidden>
       );
     }
   }
