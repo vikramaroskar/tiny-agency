@@ -7,7 +7,7 @@ module.exports = {
     preamble:
       "We're a Portland, Oregon-based team of data scientists and software engineers.",
     defaultDescription:
-      "We create products and provide services that surface business insights from website changes.",
+      "We develop our own products; and provide software engineering services to Enterprise customers.",
     postamble: "Think we can help your project? We'd love to hear from you:",
     contact: {
       email: "hi@foxandgeese.com",
