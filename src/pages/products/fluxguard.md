@@ -1,7 +1,7 @@
 ---
 title: "Fluxguard"
 siteLink: "https://fluxguard.com"
-imageLink: "https://s3.amazonaws.com/foxandgeese/flux-logo.svg"
+imageLink: "https://d3lubguj0jcn6d.cloudfront.net/flux-logo.svg"
 customWidth: "70%"
 customTopPadding: "50px"
 ---

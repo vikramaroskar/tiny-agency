@@ -1,6 +1,6 @@
 ---
 title: "Engineering"
-imageLink: "https://s3.amazonaws.com/foxandgeese/engineering.png"
+imageLink: "https://d3lubguj0jcn6d.cloudfront.net/engineering.png"
 ---
 
 - Robust, scalable, and self-healing
