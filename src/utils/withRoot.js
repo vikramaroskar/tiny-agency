@@ -23,22 +23,20 @@ function withRoot(Component) {
 
     render() {
       return (
-        <Hidden implementation="css">
-          <JssProvider
-            generateClassName={this.muiPageContext.generateClassName}
-          >
-            {/* MuiThemeProvider makes the theme available down the React
+        <JssProvider generateClassName={this.muiPageContext.generateClassName}>
+          {/* MuiThemeProvider makes the theme available down the React
               tree thanks to React context. */}
-            <MuiThemeProvider
-              theme={this.muiPageContext.theme}
-              sheetsManager={this.muiPageContext.sheetsManager}
-            >
-              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-              <CssBaseline />
+          <MuiThemeProvider
+            theme={this.muiPageContext.theme}
+            sheetsManager={this.muiPageContext.sheetsManager}
+          >
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <Hidden implementation="css">
               <Component {...this.props} />
-            </MuiThemeProvider>
-          </JssProvider>
-        </Hidden>
+            </Hidden>
+          </MuiThemeProvider>
+        </JssProvider>
       );
     }
   }

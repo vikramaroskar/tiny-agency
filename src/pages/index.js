@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Alien } from "mdi-material-ui";
 import { Robot } from "mdi-material-ui";
 import logo from "../../images/logo.png";
+import withRoot from "../utils/withRoot";
 
 const styles = theme => ({
     angles: {
@@ -148,4 +149,4 @@ export const query = graphql`
   }
 `;
 
-export default withStyles(styles, { withTheme: true })(Home);
+export default withRoot(withStyles(styles, { withTheme: true })(Home));
