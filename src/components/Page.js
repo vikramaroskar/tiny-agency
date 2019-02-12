@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
-import Hidden from "@material-ui/core/Hidden";
 
 const styles = theme => ({
   root: {
@@ -15,14 +14,12 @@ class Page extends React.Component {
   render() {
     const { children, classes } = this.props;
     return (
-      <Hidden implementation="css">
-        <Grid container justify="center" alignItems="stretch">
-          <Grid item xs className={classes.root}>
-            {children}
-            <Footer />
-          </Grid>
+      <Grid container justify="center" alignItems="stretch">
+        <Grid item xs className={classes.root}>
+          {children}
+          <Footer />
         </Grid>
-      </Hidden>
+      </Grid>
     );
   }
 }
