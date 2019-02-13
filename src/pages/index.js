@@ -15,6 +15,7 @@ import Avatar from "@material-ui/core/Avatar";
 const styles = theme => ({
     angles: {
       color: theme.palette.secondary.light,
+      opacity: 0.5,
     },
     avatar: {
       width: "160px",
