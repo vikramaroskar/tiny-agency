@@ -1,7 +1,7 @@
 ---
 title: "Versionista"
 siteLink: "https://versionista.com"
-imageLink: "https://s3.amazonaws.com/foxandgeese/versionista-logo-lato.svg"
+imageLink: "https://d3lubguj0jcn6d.cloudfront.net/versionista-logo-2019-02-12-9.svg"
 customWidth: "75%"
 customTopPadding: "52px"
 ---
