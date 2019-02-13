@@ -6,6 +6,8 @@ customWidth: "65%"
 customTopPadding: "52px"
 ---
 
-Since 2008, our flagship website change monitoring product, Versionista, has
-provided website change detection and actionable insights to 1000s of
-businesses.
+Since 2008, our flagship website change monitoring product has provided
+actionable insights from website change detection to 1000s of businesses.
+
+- Over 1400 features integrated in over 10 years
+- We average 1 new feature, fix, or code push every day
