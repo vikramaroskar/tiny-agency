@@ -18,7 +18,7 @@ const Footer = props => {
         style={{ marginBottom: "24px", whiteSpace: "nowrap" }}
         id="footer"
       >
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "left" }}>
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {company}{" "}
             <Hidden only={["xs", "sm"]}>–</Hidden>
@@ -27,16 +27,20 @@ const Footer = props => {
             </Hidden>{" "}
             {email}
           </Typography>
-          <a
-            href="https://github.com/foxandgeese/tiny-agency"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconButton>
-              <GithubCircle />
-            </IconButton>
-          </a>
+          
         </div>
+		<div style={{ float: "right"}}>
+			<a				
+				href="https://github.com/foxandgeese/tiny-agency"
+				target="_blank"
+				rel="noopener noreferrer"
+			  >
+			  Website created with template
+				<IconButton>
+				  <GithubCircle /> 
+				</IconButton>
+			  </a>
+		</div>
       </footer>
     </>
   );

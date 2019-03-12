@@ -76,7 +76,7 @@ const styles = theme => ({
             variant="h1"
             component="span"
           >
-            <span className={classes.angles}>&lt;</span> hi{" "}
+            <span className={classes.angles}>&lt;</span> नमस्कार{" "}
             <span className={classes.angles}>&gt;</span>
           </Typography>
           <Typography paragraph gutterBottom variant="body1" component="span">

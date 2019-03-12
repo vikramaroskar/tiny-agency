@@ -1,16 +1,16 @@
 module.exports = {
   // Customize me!
   siteMetadata: {
-    company: "Fox and Geese",
-    domain: "https://foxandgeese.com",
-    defaultTitle: "Website Change Monitoring Products and Services",
+    company: "ORIIS",
+    domain: "https://orris.com",
+    defaultTitle: "Analytics Simplified",
     preamble:
-      "We're a Portland, Oregon-based team of data scientists and software engineers.",
+      "We're a Mumbai, India based team.",
     defaultDescription:
       "We develop our own products. And provide software engineering and consulting to select clients.",
     postamble: "Think we can help your project? We'd love to hear from you:",
     contact: {
-      email: "hi@foxandgeese.com",
+      email: "hi@gmail.com",
     },
     menuLinks: [],
   },
